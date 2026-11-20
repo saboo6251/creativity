@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CREATIVITY</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="style.css"
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-book-open"></i>
+                    CREATIVITY
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#bestsellers">Recent</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Student Magazine</h1>
+                <p>
+                    Explore.
+                </p>
+                <button class="btn">Dive in</button>
+            </div>
+        </section>
+
+        <section class="section" id="categories">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="categories">
+                <a href="https://drive.google.com/drive/folders/11oIcxvv_TqVgPxX-SYlgLWcdKBEueqtb?usp=drive_link" class="card-link">
+                <div class="category-card">
+                    <i class="fas fa-book"></i>
+                    <h3>published</h3>
+                </div>
+                </a>
+                <div class="category-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>insight</h3>
+                </div>
+                <a href="https://drive.google.com/drive/folders/17iwstS5YdqkcQ66gFnVhRj2Lwq0uHiTD?usp=drive_link" class="card-link">
+                <div class="category-card">
+                    <i class="fas fa-history"></i>
+                    <h3>PYQs</h3>
+                </div>
+                </a>
+                <a href="https://drive.google.com/drive/folders/15YGD3zaPrOxZYhx_j3SLSg801XzQaTqg?usp=drive_link" class="card-link">
+                <div class="category-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>e-Library</h3>
+                </div>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About CREATIVITY</h3>
+                    <p>
+                        ocean of creativity.
+                    </p>
+                    <div class="social-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#categories">Categories</a></li>
+                            <li><a href="#bestsellers">Recent</a></li>
+                            <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+
+
+            <div class="copyright">
+                <p>
+                    &copy; 2026 CREATIVITY. All rights reserved. Made with
+                    <i class="fas fa-heart"></i> for KNU.
+                </p>
+            </div>
+        </footer>
+
+        <script>
+            const addCartButtons = document.querySelectorAll(".add-cart");
+
+            addCartButtons.forEach((button) => {
+                button.addEventListener("click", function () {
+                    this.innerHTML = '<i class="fas fa-check"></i>';
+                    this.style.background = "#27ae60";
+
+                    setTimeout(() => {
+                        this.innerHTML = '<i class="fas fa-cart-plus"></i>';
+                        this.style.background = "#2c3e50";
+                    }, 2000);
+                });
+            });
+
+            const categoryCards = document.querySelectorAll(".category-card");
+            categoryCards.forEach((card) => {
+                card.addEventListener("click", function () {
+                    document
+                        .querySelector("#bestsellers")
+                        .scrollIntoView({ behavior: "smooth" });
+                });
+            });
+
+            document
+                .querySelector(".btn")
+                .addEventListener("click", function () {
+                    document
+                        .querySelector("#bestsellers")
+                        .scrollIntoView({ behavior: "smooth" });
+                });
+        </script>
+    </body>
+</html>
