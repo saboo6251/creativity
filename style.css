@@ -2,6 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+    -khtml-user-drag: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -71,13 +87,11 @@ nav {
     color: #e74c3c;
 }
 
-.cart-badge {
-    position: relative;
-}
-
 .hero {
-    background: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1600")
-        center/cover;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1600")
+            center/cover;
     height: 600px;
     display: flex;
     align-items: center;
@@ -103,16 +117,18 @@ nav {
     padding: 2rem;
 }
 
-.hero h1 {
-    font-size: 3.5rem;
+.hero #quote {
+    font-size: 2rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0;
 }
 
-.hero p {
+.hero #author {
     font-size: 1.3rem;
     margin-bottom: 2rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    opacity: 0.85;
 }
 
 .btn {
