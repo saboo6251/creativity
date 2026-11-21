@@ -16,6 +16,11 @@
     -khtml-user-drag: none;
 }
 
+@font-face {
+    font-family: MemphisRiver;
+    src: url(assets/fonts/Memphis\ River.otf);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -44,6 +49,7 @@ nav {
 }
 
 .logo {
+    font-family: "MemphisRiver", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
     color: #2c3e50;
@@ -129,25 +135,6 @@ nav {
     margin-bottom: 2rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     opacity: 0.85;
-}
-
-.btn {
-    padding: 1rem 2.5rem;
-    background: #e74c3c;
-    color: #fff;
-    border: none;
-    border-radius: 50px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn:hover {
-    background: #c0392b;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
 }
 
 .section {
@@ -260,6 +247,11 @@ footer {
     padding-top: 2rem;
     border-top: 1px solid #34495e;
     color: #95a5a6;
+    width: 100%;
+}
+
+name {
+    font-family: "MemphisRiver", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media (max-width: 768px) {
