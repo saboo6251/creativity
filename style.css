@@ -252,6 +252,7 @@ footer {
 
 name {
     font-family: "MemphisRiver", Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 1.8rem;
 }
 
 @media (max-width: 768px) {
